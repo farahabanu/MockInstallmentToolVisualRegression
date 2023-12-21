@@ -1,3 +1,4 @@
 # Selwnium
 # MockInstallmentDemoToolVisualRegression
 # MockInstallmentToolVisualRegression
+# MockInstallmentToolVisualRegression

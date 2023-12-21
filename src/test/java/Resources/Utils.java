@@ -14,7 +14,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -88,12 +87,6 @@ public class Utils
     }
 
 
-    public void clickNextButton()
-    {
-       WebElement button= driver.findElement(By.xpath("//div[@class='flex']//button[1]"));
-       button.click();
-    }
-
 
 
     public void imageDifference(String baseLine, String screenShot, String diffImage)  {
@@ -132,11 +125,7 @@ public class Utils
 
     }
 
-    public WebElement stepDefinitionText()
-    {
-       WebElement pageElement= driver.findElement(By.xpath(prop.getProperty("pageText")));
-       return pageElement;
-    }
+
 
     public void closeDriver()
     {
